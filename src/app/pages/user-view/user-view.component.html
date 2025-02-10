@@ -1,0 +1,19 @@
+<section>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="{{miUsuario.image}}" class="rounded-circle border border-primary"
+                    style="width: 250px; height: 250px;">
+            </div>
+
+            <div class="col-md-6">
+                <h2>{{miUsuario.first_name}}</h2>
+                <h2>{{miUsuario.last_name}}</h2>
+                <p><strong>Nombre Usuario: </strong>{{miUsuario.username}}</p>
+                <p><strong>Email: </strong>{{miUsuario.email}}</p>
+                <app-botonera [parent]="'view'" [_id]="miUsuario._id"></app-botonera>
+
+            </div>
+        </div>
+    </div>
+</section>

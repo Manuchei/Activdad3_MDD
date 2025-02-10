@@ -1,0 +1,5 @@
+<div class=" card shadow border-1 border text-center p-3">
+    <img [src]="miUsuario.image" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px;">
+    <h3>{{miUsuario.first_name}} {{miUsuario.last_name}}</h3>
+    <app-botonera [parent]="'card'" [_id]="miUsuario._id"></app-botonera>
+</div>

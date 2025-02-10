@@ -1,0 +1,13 @@
+<section class="container mt-3">
+
+    <div class=" row g-3">
+        @for (user of arrUsers; track user.id){
+        <article class="col-12 col-md-6 col-lg-4">
+            <app-user-card [miUsuario]="user"></app-user-card>
+        </article>
+        }
+        @empty {
+        <p>No disponemos de servicios de momento</p>
+        }
+    </div>
+</section>
